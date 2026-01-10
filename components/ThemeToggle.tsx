@@ -1,7 +1,5 @@
-"use client";
-
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { useTheme } from "./ThemeProvider";
 import { Moon, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 

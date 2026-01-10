@@ -42,7 +42,7 @@ const goodPrompts = [
 
 export default function InteractivePrompts() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isPaused] = useState(false);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
@@ -60,13 +60,6 @@ export default function InteractivePrompts() {
     const interval = setInterval(scroll, 20);
     return () => clearInterval(interval);
   }, [isPaused]);
-
-  const allPrompts = [
-    ...badPrompts,
-    ...goodPrompts,
-    ...badPrompts,
-    ...goodPrompts,
-  ];
 
   return (
     <section className="py-20 px-4 bg-[#000000]">
