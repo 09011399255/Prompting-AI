@@ -28,7 +28,7 @@ export default function Pricing() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-[-3px]">
             Flexible Pricing to Fit Your Needs
           </h2>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto tracking-[-2px]">
+          <p className="text-gray-400 text-lg max-w-3xl mx-auto">
             Choose the plan that works for you—whether you're a freelancer just
             starting out or a business looking to scale your AI capabilities.
             Get lifetime access to the complete guide with transparent, one-time

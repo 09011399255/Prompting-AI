@@ -33,7 +33,7 @@ export default function FinalCTA() {
             </h2>
 
             {/* Description */}
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed tracking-[-2px]">
+            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
               Stop guessing. Start understanding. Get the mental models that
               separate AI beginners from AI power users.
             </p>

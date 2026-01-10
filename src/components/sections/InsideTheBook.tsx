@@ -63,7 +63,7 @@ export default function InsideTheBook() {
             Everything You Need to{" "}
             <span className="text-[#FC8831]">Master AI</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto tracking-[-2px]">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             This isn't a collection of copy-paste prompts. It's a complete
             mental framework.
           </p>

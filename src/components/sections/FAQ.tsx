@@ -61,7 +61,7 @@ export default function FAQ() {
                 <br />
                 Questions
               </h2>
-              <p className="text-gray-400 text-lg tracking-[-2px]">
+              <p className="text-gray-400 text-lg">
                 Everything you need to know about the book and getting started
                 with better AI prompts.
               </p>

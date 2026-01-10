@@ -46,7 +46,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-lg md:text-xl text-gray-400 leading-relaxed tracking-[-2px]"
+                className="text-lg md:text-xl text-gray-400 leading-relaxed"
               >
                 Learning how to communicate with AI clearly to get faster,
                 better, monetizable results.

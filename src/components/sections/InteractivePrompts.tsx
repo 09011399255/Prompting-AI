@@ -74,7 +74,7 @@ export default function InteractivePrompts() {
             The Problem Is{" "}
             <span className="text-[#FC8831]">How You're Asking</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto tracking-[-2px]">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Most people type into AI like they're searching Google. See the
             difference?
           </p>
