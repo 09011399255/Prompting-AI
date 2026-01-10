@@ -1,18 +1,16 @@
-"use client";
+import Navigation from "./components/Navigation";
+import Hero from "./components/sections/Hero";
+import InteractivePrompts from "./components/sections/InteractivePrompts";
+import PainAndGap from "./components/sections/PainAndGap";
+import InsideTheBook from "./components/sections/InsideTheBook";
+import AboutAuthor from "./components/sections/AboutAuthor";
+import Testimonials from "./components/sections/Testimonials";
+import Pricing from "./components/sections/Pricing";
+import FAQ from "./components/sections/FAQ";
+import FinalCTA from "./components/sections/FinalCTA";
+import AnimatedBackground from "./components/AnimatedBackground";
 
-import Navigation from "@/components/Navigation";
-import Hero from "@/components/sections/Hero";
-import InteractivePrompts from "@/components/sections/InteractivePrompts";
-import PainAndGap from "@/components/sections/PainAndGap";
-import InsideTheBook from "@/components/sections/InsideTheBook";
-import AboutAuthor from "@/components/sections/AboutAuthor";
-import Testimonials from "@/components/sections/Testimonials";
-import Pricing from "@/components/sections/Pricing";
-import FAQ from "@/components/sections/FAQ";
-import FinalCTA from "@/components/sections/FinalCTA";
-import AnimatedBackground from "@/components/AnimatedBackground";
-
-export default function Home() {
+function App() {
   return (
     <main className="relative min-h-screen overflow-hidden">
       <AnimatedBackground />
@@ -45,3 +43,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default App;

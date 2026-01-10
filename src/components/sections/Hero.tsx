@@ -27,7 +27,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white"
               >
                 You're Using AI Every Day.{" "}
                 <span className="text-[#FC8831]">
@@ -39,7 +39,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-lg md:text-xl text-[var(--text-secondary)] leading-relaxed"
+                className="text-lg md:text-xl text-gray-400 leading-relaxed"
               >
                 Learning how to communicate with AI clearly to get faster,
                 better, monetizable results.
@@ -66,7 +66,7 @@ export default function Hero() {
                 href="https://selar.com/v7h7963l65"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 border border-gray-700 hover:border-gray-600 text-[var(--text-primary)] rounded-full font-medium text-lg transition-colors"
+                className="px-8 py-4 border border-gray-700 hover:border-gray-600 text-white rounded-full font-medium text-lg transition-colors"
               >
                 See What's Inside
               </a>
