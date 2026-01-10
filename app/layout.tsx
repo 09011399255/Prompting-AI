@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Archivo } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
-
-const archivo = Archivo({
-  weight: ["700"],
+const inter = Inter({ 
   subsets: ["latin"],
-  variable: "--font-archivo",
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -31,11 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={`${inter.className} ${archivo.variable}`}
-    >
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
