@@ -5,7 +5,7 @@ import { Sparkles, BookMarked, Rocket } from "lucide-react";
 
 export default function AboutAuthor() {
   return (
-    <section className="py-20 px-4 bg-[#000000]">
+    <section className="py-12 md:py-20 px-4 bg-[#000000]">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -21,7 +21,7 @@ export default function AboutAuthor() {
               </div>
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-3px]">
               Serious AI Education for{" "}
               <span className="text-[#FC8831]">Serious People</span>
             </h2>

@@ -26,7 +26,7 @@ const problems = [
 
 export default function PainAndGap() {
   return (
-    <section className="py-20 px-4 bg-[#000000]">
+    <section className="py-12 md:py-20 px-4 bg-[#000000]">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -5,7 +5,7 @@ import { Sparkles, ArrowRight } from "lucide-react";
 
 export default function FinalCTA() {
   return (
-    <section className="py-32 px-4 bg-[#0D0D0D]">
+    <section className="py-16 md:py-32 px-4 bg-[#0D0D0D]">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -26,14 +26,14 @@ export default function FinalCTA() {
             </div>
 
             {/* Headline */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white tracking-[-3px]">
               Clearer Thinking. Better Results.
               <br />
               <span className="text-[#FC8831]">More Leverage.</span>
             </h2>
 
             {/* Description */}
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed tracking-[-2px]">
               Stop guessing. Start understanding. Get the mental models that
               separate AI beginners from AI power users.
             </p>

@@ -26,7 +26,7 @@ const problems = [
 
 export default function PainAndGap() {
   return (
-    <section className="py-20 px-4 bg-[#000000]">
+    <section className="py-12 md:py-20 px-4 bg-[#000000]">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export default function PainAndGap() {
           viewport={{ once: true }}
           className="text-center space-y-4 mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-3px]">
             Why Most People{" "}
             <span className="text-[#FC8831]">Struggle with AI</span>
           </h2>

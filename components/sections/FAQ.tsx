@@ -45,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 px-4 bg-[#000000]">
+    <section id="faq" className="py-12 md:py-20 px-4 bg-[#000000]">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left side - Title and Contact */}

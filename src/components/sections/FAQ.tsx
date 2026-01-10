@@ -45,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 px-4 bg-[#000000]">
+    <section id="faq" className="py-12 md:py-20 px-4 bg-[#000000]">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left side - Title and Contact */}
@@ -56,12 +56,12 @@ export default function FAQ() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white">
+              <h2 className="text-4xl md:text-5xl font-bold text-white tracking-[-3px]">
                 Frequently Asked
                 <br />
                 Questions
               </h2>
-              <p className="text-gray-400 text-lg">
+              <p className="text-gray-400 text-lg tracking-[-2px]">
                 Everything you need to know about the book and getting started
                 with better AI prompts.
               </p>

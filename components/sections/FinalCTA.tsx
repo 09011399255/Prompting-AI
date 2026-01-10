@@ -5,7 +5,7 @@ import { Sparkles, ArrowRight } from "lucide-react";
 
 export default function FinalCTA() {
   return (
-    <section className="py-32 px-4 bg-[#0D0D0D]">
+    <section className="py-16 md:py-32 px-4 bg-[#0D0D0D]">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

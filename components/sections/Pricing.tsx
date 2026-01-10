@@ -14,22 +14,25 @@ const features = [
 
 export default function Pricing() {
   return (
-    <section className="py-32 px-4 bg-[#000000] flex items-center justify-center">
+    <section
+      id="pricing"
+      className="py-16 md:py-32 px-4 bg-[#000000] flex items-center justify-center"
+    >
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center space-y-4 mb-16"
+          className="text-center space-y-4 mb-8 md:mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Flexible Pricing to Fit Your Needs
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            Choose the plan that works for you—whether you need single
-            verifications, bulk checks, or enterprise-scale integrations.
-            Transparent, pay-as-you-go pricing ensures you only pay for what you
-            use, with no hidden fees
+            Choose the plan that works for you—whether you're a freelancer just
+            starting out or a business looking to scale your AI capabilities.
+            Get lifetime access to the complete guide with transparent, one-time
+            pricing.
           </p>
         </motion.div>
 
@@ -53,9 +56,11 @@ export default function Pricing() {
                   <div className="w-6 h-6 rounded-full border-4 border-black" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">Enterprise</h3>
+                  <h3 className="text-xl font-bold text-white">
+                    Professional Plan
+                  </h3>
                   <p className="text-sm text-gray-400">
-                    For large teams & corporations.
+                    For freelancers, entrepreneurs & businesses.
                   </p>
                 </div>
               </div>

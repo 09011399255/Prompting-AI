@@ -11,6 +11,13 @@ export default function Hero() {
     });
   };
 
+  const scrollToFeatures = () => {
+    const element = document.getElementById("inside-the-book");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center relative px-4 py-20 pt-32">
       <div className="container mx-auto max-w-7xl">
@@ -27,7 +34,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white tracking-[-3px]"
               >
                 You're Using AI Every Day.{" "}
                 <span className="text-[#FC8831]">
@@ -39,7 +46,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-lg md:text-xl text-gray-400 leading-relaxed"
+                className="text-lg md:text-xl text-gray-400 leading-relaxed tracking-[-2px]"
               >
                 Learning how to communicate with AI clearly to get faster,
                 better, monetizable results.
@@ -62,14 +69,12 @@ export default function Hero() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
 
-              <a
-                href="https://selar.com/v7h7963l65"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={scrollToFeatures}
                 className="px-8 py-4 border border-gray-700 hover:border-gray-600 text-white rounded-full font-medium text-lg transition-colors"
               >
                 See What's Inside
-              </a>
+              </button>
             </motion.div>
 
             <motion.div
