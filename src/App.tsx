@@ -12,7 +12,7 @@ import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden w-full">
       <Navigation />
 
       <AnimatedBackground />
@@ -29,7 +29,7 @@ function App() {
         />
       </div>
 
-      <main className="relative z-10 pt-20">
+      <main className="relative z-10 pt-20 w-full overflow-x-hidden">
         <Hero />
         <InteractivePrompts />
         <PainAndGap />
