@@ -12,11 +12,13 @@ import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
   return (
-    <main className="relative min-h-screen overflow-hidden">
+    <div className="relative">
+      <Navigation />
+
       <AnimatedBackground />
 
       {/* Grid Background */}
-      <div className="fixed inset-0 z-0 opacity-20">
+      <div className="fixed inset-0 z-0 opacity-20 pointer-events-none">
         <div
           className="absolute inset-0"
           style={{
@@ -27,9 +29,7 @@ function App() {
         />
       </div>
 
-      <Navigation />
-
-      <div className="relative z-10">
+      <main className="relative z-10 pt-20">
         <Hero />
         <InteractivePrompts />
         <PainAndGap />
@@ -39,8 +39,8 @@ function App() {
         <Pricing />
         <FAQ />
         <FinalCTA />
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
 

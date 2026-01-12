@@ -16,12 +16,7 @@ export default function Navigation() {
   };
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 px-6 py-4"
-    >
+    <nav className="fixed top-0 left-0 right-0 z-[9999] px-4 md:px-6 py-3 md:py-4 bg-transparent">
       <div className="container mx-auto max-w-6xl">
         <div className="backdrop-blur-md bg-[#060606]/80 border border-[#212121] rounded-full px-8 py-4">
           <div className="flex items-center justify-between">
@@ -122,6 +117,6 @@ export default function Navigation() {
           )}
         </AnimatePresence>
       </div>
-    </motion.nav>
+    </nav>
   );
 }
