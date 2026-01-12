@@ -94,11 +94,11 @@ export default function InteractivePrompts() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative p-6 rounded-xl bg-[#060606] border border-[#212121] hover:border-red-500/50 transition-all overflow-hidden"
+                className="group relative p-6 rounded-xl bg-[#060606] border border-[#212121] md:hover:border-red-500/50 transition-colors overflow-hidden"
               >
                 {/* Hover gradient */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-red-500/5 to-transparent animate-gradient" />
+                <div className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-red-500/5 to-transparent" />
                 </div>
 
                 <div className="relative z-10 space-y-3">
@@ -129,11 +129,11 @@ export default function InteractivePrompts() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative p-6 rounded-xl bg-[#060606] border border-[#212121] hover:border-green-500/50 transition-all overflow-hidden"
+                className="group relative p-6 rounded-xl bg-[#060606] border border-[#212121] md:hover:border-green-500/50 transition-colors overflow-hidden"
               >
                 {/* Hover gradient */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-green-500/5 to-transparent animate-gradient" />
+                <div className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-green-500/5 to-transparent" />
                 </div>
 
                 <div className="relative z-10 space-y-3">

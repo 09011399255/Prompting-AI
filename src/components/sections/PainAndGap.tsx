@@ -52,12 +52,11 @@ export default function PainAndGap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              whileHover={{ y: -10 }}
-              className="group relative p-8 rounded-2xl bg-[#060606] border border-[#212121] transition-all overflow-hidden"
+              className="group relative p-8 rounded-2xl bg-[#060606] border border-[#212121] overflow-hidden"
             >
               {/* Animated gradient background on hover */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FC8831]/10 via-[#FC8831]/5 to-transparent animate-gradient" />
+              <div className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FC8831]/10 via-[#FC8831]/5 to-transparent" />
               </div>
 
               <div className="relative z-10">
