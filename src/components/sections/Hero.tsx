@@ -2,6 +2,10 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import {
+  trackPurchase,
+  trackInitiateCheckout,
+} from "../../utils/fbPixelEvents";
 
 export default function Hero() {
   const scrollToNext = () => {
@@ -63,6 +67,10 @@ export default function Hero() {
                 href="https://selar.com/v7h7963l65"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  trackInitiateCheckout();
+                  trackPurchase();
+                }}
                 className="group px-8 py-4 bg-[#FC8831] hover:bg-[#FD9A4A] rounded-full text-white font-medium text-lg transition-colors flex items-center justify-center gap-2"
               >
                 Get the Book Now

@@ -2,6 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import {
+  trackPurchase,
+  trackInitiateCheckout,
+  trackViewContent,
+} from "../../utils/fbPixelEvents";
 
 const features = [
   "Complete prompting framework",
@@ -34,6 +39,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          onViewportEnter={() => trackViewContent("Pricing Section")}
           className="text-center space-y-4 mb-8 md:mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-[-3px]">
@@ -96,6 +102,10 @@ export default function Pricing() {
                   href="https://selar.com/v7h7963l65"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    trackInitiateCheckout();
+                    trackPurchase();
+                  }}
                   className="block w-full py-3 md:py-4 bg-[#FC8831] hover:bg-[#FD9A4A] text-white text-center font-semibold rounded-full mb-6 md:mb-8 transition-colors text-base md:text-lg"
                 >
                   Get Started
@@ -179,6 +189,10 @@ export default function Pricing() {
                   href="https://selar.com/v7h7963l65"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    trackInitiateCheckout();
+                    trackPurchase();
+                  }}
                   className="block w-full py-3 md:py-4 bg-[#FC8831] hover:bg-[#FD9A4A] text-white text-center font-semibold rounded-full mb-6 md:mb-8 transition-colors text-base md:text-lg"
                 >
                   Claim Your Spot
