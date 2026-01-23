@@ -2,10 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Sparkles, ArrowRight } from "lucide-react";
-import {
-  trackPurchase,
-  trackInitiateCheckout,
-} from "../../utils/fbPixelEvents";
 
 export default function FinalCTA() {
   return (
@@ -48,10 +44,6 @@ export default function FinalCTA() {
                 href="https://selar.com/v7h7963l65"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => {
-                  trackInitiateCheckout();
-                  trackPurchase();
-                }}
                 className="inline-flex items-center gap-2 px-8 py-4 bg-[#FC8831] hover:bg-[#FD9A4A] text-white font-semibold text-lg rounded-full transition-colors"
               >
                 <span className="hidden sm:inline">

@@ -9,12 +9,10 @@ import Pricing from "./components/sections/Pricing";
 import FAQ from "./components/sections/FAQ";
 import FinalCTA from "./components/sections/FinalCTA";
 import AnimatedBackground from "./components/AnimatedBackground";
-import FacebookPixel from "./components/FacebookPixel";
 
 function App() {
   return (
     <div className="relative overflow-x-hidden w-full">
-      <FacebookPixel />
       <Navigation />
 
       <AnimatedBackground />
